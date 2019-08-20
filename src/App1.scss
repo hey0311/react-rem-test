@@ -1,0 +1,16 @@
+@function px2rem($px){
+  $rem : 37.5px;
+  @return ($px/$rem) + rem;
+}
+.bar{
+  background: red;
+  height:px2rem(667px);
+  width:px2rem(225px);
+  display: inline-block;
+}
+.pie{
+  background: yellowgreen;
+  height:px2rem(667px);
+  width:px2rem(150px);
+  display: inline-block;
+}

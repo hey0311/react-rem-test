@@ -1,0 +1,16 @@
+$vm_base: 375;
+@function vw($px) {
+  @return ($px / 375) * 100vw;
+}
+.bar1{
+  background: red;
+  height:667px;
+  width:vw(250);
+  display: inline-block;
+}
+.pie1{
+  background: yellowgreen;
+  height:667px;
+  width:vw(125);
+  display: inline-block;
+}
